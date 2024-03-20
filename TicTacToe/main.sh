@@ -68,24 +68,29 @@ check_status () {
 
 default_game () {
     signs="XO"
-    j=0
-    i=0
+    j=$1
     printf "\n$(print_board)\n"
-    while [ $i -lt 8 ]; do
+    while true; do
         # logic
-        read -p "Player ${signs:j:1}: " position
-        mark_on_board ${signs:j:1} ${position:0:1} ${position:1:1}
+        read -p "Player ${signs:j:1}: " input
+        if [ $input == "save" ]; then
+            printf "$B\n" > saved_game.txt
+            printf "$j" >> saved_game.txt
+            printf "\nSuccessfully saved!"
+            break
+        fi
+
+        mark_on_board ${signs:j:1} ${input:0:1} ${input:1:1}
         printf "\n$(print_board)\n"
 
         check_status
         if [ "$?" == "1" ]; then
             printf "\n"
             read -p "Press any key to continue..." x
-            exit 0
+            break
         fi
 
         # counters
-        i=$(($i + 1))
         j=$(($j + 1))
         if [ $j == 2 ]; then
             j=0
@@ -93,4 +98,23 @@ default_game () {
     done
 }
 
-default_game
+open_saved_game () {
+    if [ -f "saved_game.txt" ]; then
+        board=$(head -n 1 saved_game.txt)
+        player=$(head -n 2 saved_game.txt | tail -n 1)
+        rm saved_game.txt
+        B=$board
+        default_game $player
+    fi
+}
+
+printf "\nMenu (choose the option):\n"
+printf "1. Start default game\n"
+printf "2. Open saved game\n\n"
+
+read -p "--> " option
+if [ $option == "1" ]; then
+    default_game 0
+elif [ $option == "2" ]; then
+    open_saved_game
+fi
