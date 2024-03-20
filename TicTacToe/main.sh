@@ -79,6 +79,8 @@ default_game () {
 
         check_status
         if [ "$?" == "1" ]; then
+            printf "\n"
+            read -p "Press any key to continue..." x
             exit 0
         fi
 
