@@ -49,43 +49,30 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: working_hours
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - is the restaurant open on [Monday](day)?
+    - are you open on [Tuesday](day) at [11](time)?
+    - are you working on [Wednesday](day)?
+    - when can I come?
 
-- intent: mood_unhappy
+- intent: menu
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - the menu, please
+    - show the menu
+    - what dishes can be ordered?
 
-- intent: bot_challenge
+- intent: order
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - I want to order a [Hot-dog](order_items)
+    - A [Pizza](order_items), please
+    - I would like to order a [Burger](order_items)
+    - I want to order a [Spaghetti Carbonara](order_items) [with coca-cola](order_additions)
+    - A [Pizza](order_items) [without mushrooms](order_additions)
+    - I would like to order a [Tiramisu](order_items) [with a tea](order_additions)
+
+- intent: order_check
+  examples: |
+    - What is the status of an order with number [1](order_number)?
+    - Can I take order [25](order_number)?
+    - Is the order [87](order_number) ready for pick-up?

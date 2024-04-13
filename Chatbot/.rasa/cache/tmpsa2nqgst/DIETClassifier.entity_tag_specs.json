@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-day",
+      "2": "I-day",
+      "3": "L-day",
+      "4": "U-day",
+      "5": "B-order_additions",
+      "6": "I-order_additions",
+      "7": "L-order_additions",
+      "8": "U-order_additions",
+      "9": "B-order_items",
+      "10": "I-order_items",
+      "11": "L-order_items",
+      "12": "U-order_items",
+      "13": "B-order_number",
+      "14": "I-order_number",
+      "15": "L-order_number",
+      "16": "U-order_number",
+      "17": "B-time",
+      "18": "I-time",
+      "19": "L-time",
+      "20": "U-time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-day": 1,
+      "I-day": 2,
+      "L-day": 3,
+      "U-day": 4,
+      "B-order_additions": 5,
+      "I-order_additions": 6,
+      "L-order_additions": 7,
+      "U-order_additions": 8,
+      "B-order_items": 9,
+      "I-order_items": 10,
+      "L-order_items": 11,
+      "U-order_items": 12,
+      "B-order_number": 13,
+      "I-order_number": 14,
+      "L-order_number": 15,
+      "U-order_number": 16,
+      "B-time": 17,
+      "I-time": 18,
+      "L-time": 19,
+      "U-time": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
