@@ -10,4 +10,6 @@ Kod: TicTacToe
 
 ### Zadanie 2: Chatbot
 
+:white_check_mark: 4.5 [Link](https://github.com/1luvin/scripts/commit/598d42841ca208cb5135d2d87c4c8302b7aae3bd)
+
 Kod: Chatbot
