@@ -13,3 +13,9 @@ Kod: TicTacToe
 :white_check_mark: 4.5 [Link](https://github.com/1luvin/scripts/commit/598d42841ca208cb5135d2d87c4c8302b7aae3bd)
 
 Kod: Chatbot
+
+### Zadanie 3: Sklep w ReactJS + NodeJS
+
+:white_check_mark: 4.0 [Link](https://github.com/1luvin/scripts/commit/665e6b236ee257c480d9d8814723c740933a265a)
+
+Kod: StoreJS
