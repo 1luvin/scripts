@@ -21,7 +21,10 @@ Kod: Chatbot
 Kod: StoreJS
 
 ### Zadanie 4: Tetris w Lua
-jeszcze dorabiam...
+
+:white_check_mark: 3.0 [Link](https://github.com/1luvin/scripts/commit/c184df1cd38d7a1dbf447927d3a77fbf48c31ab7)
+
+Kod: Tetris
 
 ### Zadanie 5: Crawler w Ruby
 
