@@ -19,3 +19,12 @@ Kod: Chatbot
 :white_check_mark: 4.0 [Link](https://github.com/1luvin/scripts/commit/665e6b236ee257c480d9d8814723c740933a265a)
 
 Kod: StoreJS
+
+### Zadanie 4: Tetris w Lua
+jeszcze dorabiam...
+
+### Zadanie 5: Crawler w Ruby
+
+:white_check_mark: 3.0 [Link](https://github.com/1luvin/scripts/commit/ed2d51fb5accd95d11210b0d756ff24535e863b2)
+
+Kod: CrawlerRuby
